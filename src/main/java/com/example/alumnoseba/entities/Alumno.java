@@ -8,16 +8,17 @@ import org.hibernate.envers.Audited;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
-import javax.persistence.Table;
-import java.util.Date;
+import javax.persistence.*;
+import java.sql.Date;
+
 @Entity
-@Table(name = "libro")
+@Table(name = "alumno")
 @AllArgsConstructor
 @NoArgsConstructor
 @Getter
 @Setter
 @Audited
-public class Alumno {
+public class Alumno extends Base{
 
 
     @Column(name = "nombre")
